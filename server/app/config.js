@@ -7,7 +7,7 @@ export default {
     expiresIn: process.env.JWT_EXPIRES_IN || "1h",
     secret: process.env.JWT_SECRET,
   },
-  mongoURL: process.env.MONGO_URL || "mongodb://127.0.0.1:27017/book",
+  mongoURL: process.env.MONGO_URL || "mongodb://localhost:27017/book",
   port: process.env.PORT || 4000,
   saltRounds: process.env.SALT_ROUNDS || 10,
 };
